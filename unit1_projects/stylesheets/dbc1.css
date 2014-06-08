@@ -1,4 +1,15 @@
-p { 
-  font-size: small; 
-  color: #333333
+.foot { 
+  font-size: medium;
+  font-style: italic; 
+  color: gray;
+  text-align: right;
 }
+
+.wrapper {
+	height:14%;
+	background-color: purple;
+   }
+
+ #changeColor{
+ 	color: blue;
+ }
