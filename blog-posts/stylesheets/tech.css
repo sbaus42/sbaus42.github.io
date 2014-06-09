@@ -46,3 +46,10 @@ img{
 	vertical-align: center;	
 	margin: 10px;
 }
+
+img.w{
+	width: 600px;
+	height: auto;
+	vertical-align: center;	
+	margin: 10px;
+}
