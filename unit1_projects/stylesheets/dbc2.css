@@ -2,6 +2,7 @@
 	text-align: center;
 	border: 5px solid gray;
 	margin-bottom: 10px;
+	border-radius: 5px;
 }
 
 #content-area{
