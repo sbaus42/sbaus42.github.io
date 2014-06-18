@@ -10,14 +10,32 @@ img{
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
-
-
+ul li.head{
+	display: inline;
+	list-style-type: none;
+}
 body{
 	margin: 0;
 	font-family: 'Quicksand';
 }
 header{
 	margin: 0;
+}
+footer{
+	text-align: center;
+	position: absolute;
+	background-color: black;
+	color: white;
+	bottom: 0;
+	width: 100%;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	background-color: black;
+	border-radius: 2px;
+	color: white;
 }
 .banner{
 	background-color: #e4bc0c;
@@ -48,10 +66,13 @@ header{
 
 }
 
-.wrapper{
+.posts{
 	display: inline-block;
 	max-width: 500px;
+	width: 100%;
 	margin:0;
+	max-height: 1000px;
+	height: 70%;
 }
 
 .bio{
