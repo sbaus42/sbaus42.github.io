@@ -1,22 +1,33 @@
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  src: url(http://themes.googleusercontent.com/static/fonts/quicksand/v3/qhfoJiLu10kFjChCCTvGlKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
 img{
 	width: 200px;
 	height: auto;
-	border-radius: 200px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
-h5{
-	margin-top: -30px;
-}
 
+body{
+	margin: 0;
+	font-family: 'Quicksand';
+}
 header{
-	margin-top: -25px;
-	margin-right: -25px;
-	margin-left: -25px;
-	background-color: gray;
-	text-align: center;
-	padding-top: 2px;
+	margin: 0;
 }
-
+.banner{
+	background-color: #e4bc0c;
+	height: 50px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.top{
+	display: inline-block;
+}
 .blog-posts{
 	background-color: gray;
 	float: left;
@@ -25,26 +36,30 @@ header{
 	margin-left: 10px;
 
 }
-
+.title{
+	font-size: 50px;
+}
 .sidebar{
+	width: 200px;
 	float: left;
-	padding-right: 10px;
-	padding-left: 10px;
-	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: gray;
+	background-color: #e4bc0c;
 	border-radius: 5px;
 }
 
 .wrapper{
-	margin-right: 10%;
 	margin-left: 10%;
 }
 
-h3.indent{
-	text-indent: 30px;
+.bio{
+	text-align: left;
 }
 
-.htext{
+.name{
+	font-family: 'Quicksand';
 	text-align: center;
+	font-weight: bold;
+}
+.date{
+	width: 200px;
 }
