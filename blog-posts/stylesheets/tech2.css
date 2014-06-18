@@ -1,0 +1,9 @@
+p{
+	text-indent: 2.2em;
+	text-align: justify;
+}
+.inblock{
+	border-style: dashed;
+	border-color: blue;
+	margin:5px;
+}

@@ -1,9 +1,11 @@
+/* General Styles */
 @font-face {
-  font-family: 'Lato';
-  src: url(http://themes.googleusercontent.com/static/fonts/lato/v7/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff);
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  src: url(http://themes.googleusercontent.com/static/fonts/quicksand/v3/qhfoJiLu10kFjChCCTvGlKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
 
-/* General Styles */
 body {
   background-color: rgb(241, 241, 241);
   font-size: 16px;
@@ -12,7 +14,8 @@ body {
   margin: 0px auto;
   min-width: 960px;
   width: 100%;
-  font-family: 'Lato';
+  font-family: 'Quicksand';
+
 }
 
 p {
@@ -22,10 +25,6 @@ p {
 a {
   color: #1D766F;
   text-decoration: none;
-}
-
-a:hover {
-  color: #2c3e50;
 }
 
 h1 {
@@ -58,18 +57,30 @@ h4 {
 }
 
 /* Navigation */
-nav li {
+.nav li {
   float: left;
 }
-nav li a {
+.nav li a {
   color: #fff;
   margin: 0 10px;
   padding: 5px 10px;
   text-decoration: none;
 }
 
+.nav li a:hover {
+  color: purple;
+  border-radius: 3px;
+  background-color: white;
+}
+
+a:hover {
+  color: purple;
+  border-radius: 3px;
+  background-color: white;
+}
+
+
 .jump {
-  font-family: 'EntypoRegular';
   color: #565656;
   font-size: 70px;
   line-height: 80px;
@@ -86,25 +97,25 @@ nav li a {
 
 
 /* Header */
-header {
+#header {
   background-color: #009D92;
   padding: 10px;
 }
-header h1 {
+#header h1 {
   color: #FFEECC;
   background: url('../images/icons/it.png') no-repeat 0 50%;
   padding-left: 40px;
 }
-header nav {
+#header .nav {
   float: right;
   font-size: 1.2em;
   margin-left: 20px;
 }
-header nav li {
+#header .nav li {
   line-height: 75px;
 }
 
-header:after {
+#header:after {
   /* clearfix hack */
   content: "";
   display: table;
@@ -113,17 +124,17 @@ header:after {
 
 
 /* Main */
-main section {
+#main div {
   margin-bottom: 1em;
   position: relative;
 }
-main div.wrapper{
+#main div.wrapper{
     width: 100%;
     max-width:1400px;
     margin: 0 auto;
 }
 
-main section:after {
+#main section:after {
   /* clearfix hack */
   content: "";
   display: table;
@@ -132,7 +143,7 @@ main section:after {
 
 
 /* Famous Women */
-#famous article {
+#famous div.woman {
   background-color: white;
   float: left;
   min-height: 250px;
@@ -141,7 +152,7 @@ main section:after {
   width: 27.33%;
 }
 
-#famous article.break {
+#famous div.break {
   clear: both;
 }
 
@@ -193,37 +204,19 @@ main section:after {
 
 
 /* Footer */
-footer {
+#footer {
   background-color: #00665F;
 }
 
-footer nav {
+#footer .nav {
   float: left;
   font-size: 1.1em;
   margin: 10px;
 }
 
-footer:after {
+#footer:after {
   /* clearfix hack */
   content: "";
   display: table;
   clear: both;
-}
-
-
-/* Fonts */
-@font-face {
-  font-family: 'EntypoRegular';
-  src: url('font/Entypo-webfont.eot');
-  src: url('font/Entypo-webfont.eot?#iefix') format('embedded-opentype'),
-       url('font/Entypo-webfont.woff') format('woff'),
-       url('font/Entypo-webfont.ttf') format('truetype'),
-       url('font/Entypo-webfont.svg#EntypoRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url(http://themes.googleusercontent.com/static/fonts/lato/v7/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff);
 }

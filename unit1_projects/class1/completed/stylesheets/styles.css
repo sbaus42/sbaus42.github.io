@@ -1,20 +1,13 @@
 /* General Styles */
-@font-face {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 300;
-  src: url(http://themes.googleusercontent.com/static/fonts/quicksand/v3/qhfoJiLu10kFjChCCTvGlKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
-}
-
 body {
   background-color: rgb(241, 241, 241);
+  font-family: 'Lato', Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.2em;
   margin: 0px auto;
   min-width: 960px;
   width: 100%;
-  font-family: 'Quicksand';
 }
 
 p {
@@ -25,12 +18,12 @@ a {
   color: #1D766F;
   text-decoration: none;
 }
-
 a:hover {
-  color: purple;
+  color: #BC2F36;
 }
 
 h1 {
+  font-family: 'Audiowide', cursive;
   font-size: 2.2em;
   float: left;
   line-height: 75px;
@@ -39,6 +32,7 @@ h1 {
 h2 {
   background-color: rgb(60, 60, 60);
   color: #FFF;
+  font-family: 'Quicksand', sans-serif;
   font-size: 2.4em;
   font-weight: 400;
   line-height: 80px;
@@ -47,6 +41,7 @@ h2 {
 }
 
 h3 {
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.4em;
   font-weight: 700;
   margin: 0 0 0.3em 0;
@@ -59,23 +54,24 @@ h4 {
   text-align: center;
 }
 
+
 /* Navigation */
-.nav li {
+nav li {
   float: left;
 }
-.nav li a {
+nav li a {
   color: #fff;
   margin: 0 10px;
   padding: 5px 10px;
   text-decoration: none;
 }
-
-ul.change:hover{
-  color:purple;
+nav li a:hover {
+  color: #FB000D;
 }
 
 .jump {
   color: #565656;
+  font-family: 'EntypoRegular';
   font-size: 70px;
   line-height: 80px;
   position: absolute;
@@ -88,28 +84,34 @@ ul.change:hover{
 .jump.down {
   right: 15px;
 }
+.jump:hover {
+  color: #BC2F36;
+}
 
 
 /* Header */
-#header {
+header {
   background-color: #009D92;
   padding: 10px;
 }
-#header h1 {
+header h1 {
   color: #FFEECC;
   background: url('../images/icons/it.png') no-repeat 0 50%;
   padding-left: 40px;
 }
-#header .nav {
+header nav {
   float: right;
   font-size: 1.2em;
   margin-left: 20px;
 }
-#header .nav li {
+header nav li {
   line-height: 75px;
 }
+header nav a:hover {
+  background-color: #fff;
+}
 
-#header:after {
+header:after {
   /* clearfix hack */
   content: "";
   display: table;
@@ -118,7 +120,7 @@ ul.change:hover{
 
 
 /* Main */
-#main div {
+#main section {
   margin-bottom: 1em;
   position: relative;
 }
@@ -127,6 +129,7 @@ ul.change:hover{
     max-width:1400px;
     margin: 0 auto;
 }
+
 
 #main section:after {
   /* clearfix hack */
@@ -137,7 +140,7 @@ ul.change:hover{
 
 
 /* Famous Women */
-#famous div.woman {
+#famous article.woman {
   background-color: white;
   float: left;
   min-height: 250px;
@@ -146,11 +149,11 @@ ul.change:hover{
   width: 27.33%;
 }
 
-#famous div.break {
+#famous article.break {
   clear: both;
 }
 
-#famous div img {
+#famous article img {
   display: block;
   margin: 1em auto;
   width: 100%;
@@ -160,6 +163,7 @@ ul.change:hover{
 /* Organizations */
 #organizations {
   clear: both;
+  height: 500px;
 }
 
 #organizations ul {
@@ -173,6 +177,14 @@ ul.change:hover{
   padding-left: 5px;
   max-width: 50%;
 }
+#organizations ul li:before {
+  color: #FB000D;
+  content: '6';
+  font-family: 'EntypoRegular';
+  font-size: 40px;
+  padding-right: 10px;
+}
+
 #organizations img {
   position: absolute;
   right: 20px;
@@ -184,6 +196,7 @@ ul.change:hover{
   display: block;
 }
 
+
 /* Fun Facts */
 #facts ul {
   margin: 50px;
@@ -194,23 +207,49 @@ ul.change:hover{
   margin-bottom: 1em;
   padding-left: 5px;
 }
-
+#facts ul li:before {
+  color: #FFA700;
+  content: '7';
+  font-family: 'EntypoRegular';
+  font-size: 30px;
+  padding-right: 10px;
+}
+#facts ul li:hover:before {
+  color: #FF6F00;
+}
 
 
 /* Footer */
-#footer {
+footer {
   background-color: #00665F;
 }
 
-#footer .nav {
+footer .nav {
   float: left;
   font-size: 1.1em;
   margin: 10px;
 }
 
-#footer:after {
+footer nav a:hover {
+  color: #FFEECC;
+}
+
+footer:after {
   /* clearfix hack */
   content: "";
   display: table;
   clear: both;
+}
+
+
+/* Fonts */
+@font-face {
+  font-family: 'EntypoRegular';
+  src: url('font/Entypo-webfont.eot');
+  src: url('font/Entypo-webfont.eot?#iefix') format('embedded-opentype'),
+       url('font/Entypo-webfont.woff') format('woff'),
+       url('font/Entypo-webfont.ttf') format('truetype'),
+       url('font/Entypo-webfont.svg#EntypoRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }

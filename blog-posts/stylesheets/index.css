@@ -29,7 +29,6 @@ header{
 	display: inline-block;
 }
 .weeks{
-	float: left;
 	border-radius: 5px;
 	padding: 10px;
 	margin-left: 10px;
@@ -40,16 +39,19 @@ header{
 	display: inline-block;
 }
 .sidebar{
+	display: inline-block;
+	margin-left: 10%;
 	width: 200px;
-	float: left;
 	padding-bottom: 10px;
 	background-color: #e4bc0c;
 	border-radius: 5px;
+
 }
 
 .wrapper{
-	margin-left: 10%;
-
+	display: inline-block;
+	max-width: 500px;
+	margin:0;
 }
 
 .bio{
@@ -57,9 +59,7 @@ header{
 }
 
 .name{
-	font-family: 'Quicksand';
 	text-align: center;
-	font-weight: bold;
 }
 .date{
 	display: inline-block;
