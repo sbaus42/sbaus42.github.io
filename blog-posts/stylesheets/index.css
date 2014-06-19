@@ -1,22 +1,23 @@
-@font-face {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 300;
-  src: url(http://themes.googleusercontent.com/static/fonts/quicksand/v3/qhfoJiLu10kFjChCCTvGlKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
-}
+
 img{
 	width: 200px;
 	height: auto;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
-ul li.head{
+ul.head li{
 	display: inline;
 	list-style-type: none;
+	margin-top: 25px;
+	height: 100px;
+	padding-top: 25px;
+	
+
 }
 body{
 	margin: 0;
-	font-family: 'Quicksand';
+	font-family: 'Open Sans', sans-serif;
+
 }
 header{
 	margin: 0;
@@ -28,14 +29,30 @@ footer{
 	color: white;
 	bottom: 0;
 	width: 100%;
+	height: 25px;
+	margin: 0px;
 }
 a{
 	text-decoration: none;
+	color: black;
 }
-a:hover{
+a:visited{
+	color:black;
+}
+li{
+	margin: 10px
+}
+li :hover{
 	background-color: black;
 	border-radius: 2px;
 	color: white;
+}
+.icons{
+	height: 50px;
+	width: 90%;
+	text-align: right;
+	padding-top: 25px;
+
 }
 .banner{
 	background-color: #e4bc0c;
@@ -43,8 +60,9 @@ a:hover{
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 }
-.top{
+.top .title{
 	display: inline-block;
+
 }
 .weeks{
 	border-radius: 5px;
@@ -55,6 +73,7 @@ a:hover{
 .title{
 	font-size: 50px;
 	display: inline-block;
+	float: left;
 }
 .sidebar{
 	display: inline-block;
@@ -63,9 +82,12 @@ a:hover{
 	padding-bottom: 10px;
 	background-color: #e4bc0c;
 	border-radius: 5px;
-
 }
-
+.wrapper{
+	position: relative;
+	padding-bottom: 25px;
+	position: inline-block;
+}
 .posts{
 	display: inline-block;
 	max-width: 500px;
@@ -73,14 +95,17 @@ a:hover{
 	margin:0;
 	max-height: 1000px;
 	height: 70%;
+
 }
 
 .bio{
 	text-align: left;
+	margin-top: 10px;
 }
 
 .name{
-	text-align: center;
+	font-weight: 500px;
+	margin:10px;
 }
 .date{
 	display: inline-block;
