@@ -32,3 +32,9 @@ p.indented {
 	clear: left;
 	text-align: center;
 }
+.toright{
+	text-align: right;
+}
+footer{
+	text-align: center;
+}
