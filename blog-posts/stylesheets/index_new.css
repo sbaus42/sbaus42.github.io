@@ -1,0 +1,101 @@
+#side{
+  display: block;
+  width: 300px;
+  height: 800px;
+  position: fixed;
+  color: white;
+}
+#mtext span{
+  font-weight: 900;
+  font-size: 30px;
+}
+
+#container span{
+  font-size: 30px;
+  font-weight: 300;
+  color: #2e74c0;
+
+}
+
+img{
+  width: 400px;
+  height: auto;
+}
+
+#mtext{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  padding: 40px;
+  text-align: center;
+}
+#footing{
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  position: absolute;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+margin: 0;
+font-family: "Roboto", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+}
+
+#mtext .second{
+  margin-top: 10px;
+}
+
+.column * {
+  margin-bottom: 1em;
+}
+.column {
+  float:left;
+}
+
+#container{
+  /*margin-left:300px;*/
+  box-sizing: border-box;
+  padding-left: 300px;
+  width: 100%;
+  height: 720px;
+}
+
+#container div{
+  width: 400px;
+  padding: 50px;
+}
+
+#left{
+  border-right: 1px solid #ddd;
+}
+article{
+  border-bottom: 1px solid #ddd;
+}
+
+#canvas{
+  opacity: 0.8;
+  width:100%;
+  height:100%;
+  background: url(../imgs/wave.png) no-repeat left center fixed;
+/*  -webkit-background-size: auto 100%;
+  -moz-background-size: 100%;
+  -o-background-size: auto 100%;*/
+  background-size: auto 800px;
+}
+
+p{
+  line-height: 1.64;
+  color: #777;
+}
+
+a{
+  background: transparent;
+}
+
+
+
+i{
+  color: white;
+}
